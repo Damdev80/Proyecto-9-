@@ -12,8 +12,8 @@
   }
 
   .text-multi-color{
-    background: #212529;
-    background: linear-gradient(#cd3396,#4795f1);
+    background: transparent;
+    background: linear-gradient(#cbd5e1,#0f172a);
     
 
     -webkit-text-fill-color: transparent;
@@ -23,28 +23,25 @@
 
 
   .animacion{
-    animation: titilear 1s infinite ;
+    animation: titilear 3s infinite ;
   }
 
   @keyframes titilear {
-    0%{
-      background: #10b981;
-    }
+      from{
+        background-color: #0ea5e9;
+        color: #fff;
+      }
 
-    25%{
-      background: #14b8a6;
-    }
 
-    50%{
-      background: #06b6d4;
-    }
+      to{
+        background-color: #6366f1;
+        color:#fff
+      }
+  }
 
-    75%{
-      background: #0ea5e9;
-    }
-    100%{
-      background: #3b82f6;
-    }
+
+  .animacion:hover{
+    animation: none;
   }
 
   .foto{
@@ -52,3 +49,4 @@
     width: 100px;
     background-color: transparent;
 }
+

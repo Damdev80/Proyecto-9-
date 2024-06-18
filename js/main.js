@@ -6,18 +6,18 @@ function imc() {
 
     if (indice <= 18) {
         document.getElementById("resultado").innerHTML = `<div class='alert alert-warning' role='alert'><strong>Tu masa de indice corporal es: bajo peso<img src="./img/perdida-de-peso.png" alt=""></i></strong></div>`
-    } else if (indice >= 18 && indice <= 24) {
-        document.getElementById("resultado").innerHTML = `<div class='alert alert-success' role='alert'><strong>Tu masa de indice corporal es: Normal<img src="./img/servicio-al-cliente.png" alt=""></i></strong></div>`
-    } else if (indice >= 25 && indice <= 29) {
-        document.getElementById("resultado").innerHTML = `<div class='alert alert-warning' role='alert'><strong>Tu masa de indice corporal es: Sobre peso<img src="./img/gordo.png" alt=""></strong></div>`
-    } else if (indice >= 30 && indice <= 34) {
-        document.getElementById("resultado").innerHTML = `<div class='alert alert-danger' role='alert'><strong>Tu masa de indice corporal es: Obesidad I<img src="./img/gordo.png" alt=""></strong></div>`
-    } else if (indice >= 35 && indice <= 39) {
-        document.getElementById("resultado").innerHTML = `<div class='alert alert-danger' role='alert'><strong>Tu masa de indice corporal es: Obesidad II<img src="./img/gordo.png" alt=""></strong></div>`
-    } else if (indice >= 40 && indice <= 49) {
-        document.getElementById("resultado").innerHTML = `<div class='alert alert-danger' role='alert'><strong>Tu masa de indice corporal es: Obesidad III<img src="./img/gordo.png" alt=""></strong></div>`
+    } else if (indice >= 19 && indice <= 24.9) {
+        document.getElementById("resultado").innerHTML = `<div class='alert alert-success' role='alert'><strong>Tu masa de indíce corporal es: Normal<img src="./img/servicio-al-cliente.png" alt=""></i></strong></div>`
+    } else if (indice >= 25 && indice <= 29.9) {
+        document.getElementById("resultado").innerHTML = `<div class='alert alert-warning' role='alert'><strong>Tu masa de indíce corporal es: Sobre peso<img src="./img/gordo.png" alt=""></strong></div>`
+    } else if (indice >= 30 && indice <= 34.9) {
+        document.getElementById("resultado").innerHTML = `<div class='alert alert-danger' role='alert'><strong>Tu masa de indíce corporal es: Obesidad I<img src="./img/gordo.png" alt=""></strong></div>`
+    } else if (indice >= 35 && indice <= 39.9) {
+        document.getElementById("resultado").innerHTML = `<div class='alert alert-danger' role='alert'><strong>Tu masa de indíce corporal es: Obesidad II<img src="./img/gordo.png" alt=""></strong></div>`
+    } else if (indice >= 40 && indice <= 49.9) {
+        document.getElementById("resultado").innerHTML = `<div class='alert alert-danger' role='alert'><strong>Tu masa de indíce corporal es: Obesidad III<img src="./img/gordo.png" alt=""></strong></div>`
     } else if (indice >= 50) {
-        document.getElementById("resultado").innerHTML = `<div class='alert alert-danger' role='alert'><strong>Tu masa de indice corporal es: Obesidad VI</strong></div>`
+        document.getElementById("resultado").innerHTML = `<div class='alert alert-danger' role='alert'><strong>Tu masa de indíce corporal es: Obesidad VI</strong></div>`
     } else {
         document.getElementById("resultado").innerHTML = `<div class='alert alert-danger' role='alert'><strong>Erorr, Los campos no estan debidamente diligenciados </strong></div>`
     }
@@ -37,15 +37,15 @@ function presionarterial() {
 
 
     if (precion <= 90) {
-        document.getElementById("pre").innerHTML = `<div class='alert alert-warning' role='alert'><strong>Tu precion es: Baja<img src="./img/advertencia.png" alt=""></strong></div>`
+        document.getElementById("pre").innerHTML = `<div class='alert alert-warning' role='alert'><strong>Tu preción es: Baja<img src="./img/advertencia.png" alt=""></strong></div>`
     } else if (precion <= 120) {
-        document.getElementById("pre").innerHTML = `<div class='alert alert-success' role='alert'><strong>TTu precion es: Normal l<img src="./img/servicio-al-cliente.png" alt=""></strong></div>`
+        document.getElementById("pre").innerHTML = `<div class='alert alert-success' role='alert'><strong>Tu preción es: Normal l<img src="./img/servicio-al-cliente.png" alt=""></strong></div>`
     } else if (precion >= 120 && precion <= 139) {
-        document.getElementById("pre").innerHTML = `<div class='alert alert-warning' role='alert'><strong>Tu precion es: Prehipertencsion <img src="./img/peligro.png" alt=""></strong></div>`
+        document.getElementById("pre").innerHTML = `<div class='alert alert-warning' role='alert'><strong>Tu preción es: Prehipertencsion <img src="./img/peligro.png" alt=""></strong></div>`
     } else if (precion >= 140 && precion <= 159) {
-        document.getElementById("pre").innerHTML = `<div class='alert alert-danger' role='alert'><strong>Tu precion es: Alta Hipertension Fase 1 <img src="./img/peligro.png" alt=""></strong></div>`
+        document.getElementById("pre").innerHTML = `<div class='alert alert-danger' role='alert'><strong>Tu preción es: Alta Hipertension Fase 1 <img src="./img/peligro.png" alt=""></strong></div>`
     } else if (precion >= 160) {
-        document.getElementById("pre").innerHTML = `<div class='alert alert-danger' role='alert'><strong>Tu precion es: Alta Hipertension Fase 2 <img src="./img/peligro.png" alt=""></strong></div>`
+        document.getElementById("pre").innerHTML = `<div class='alert alert-danger' role='alert'><strong>Tu preción es: Alta Hipertension Fase 2 <img src="./img/peligro.png" alt=""></strong></div>`
     } else {
         document.getElementById("resultado").innerHTML = `<div class='alert alert-danger' role='alert'><strong>Erorr, Los campos no estan debidamente diligenciados</strong></div>`
     }
@@ -120,7 +120,7 @@ function tablaH() {
             document.getElementById("resultado3").innerHTML = `<div class='alert alert-info' role='alert'><strong>Su peso ${peso} y su altura es de ${altura} y es adecuado para su sexo y edad <img src="./img/mujer.png" alt=""> </strong></div>`
         }
     } else if (!genero.includes(sexo)) {
-        document.getElementById("resultado3").innerHTML = `<div class='alert alert-danger' role='alert'><strong>Erorr, Los campos no estan debidamente llenados, recuerde que solo se aceptan los valores de Masculino (M) y Femenino(F)</strong></div>`
+        document.getElementById("resultado3").innerHTML = `<div class='alert alert-danger' role='alert'><strong>Error: Los campos no están debidamente llenados. Recuerde que solo se aceptan los valores de Masculino (M) y Femenino (F)</strong></div>`
     }
 }
 
