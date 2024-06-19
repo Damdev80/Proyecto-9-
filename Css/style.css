@@ -13,7 +13,7 @@
 
   .text-multi-color{
     background: transparent;
-    background: linear-gradient(#cbd5e1,#0f172a);
+    background: linear-gradient(#cbd5e1,#22d3ee,#cbd5e1);
     
 
     -webkit-text-fill-color: transparent;

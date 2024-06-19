@@ -47,7 +47,7 @@ function presionarterial() {
     } else if (precion >= 160) {
         document.getElementById("pre").innerHTML = `<div class='alert alert-danger' role='alert'><strong>Tu preción es: Alta Hipertension Fase 2 <img src="./img/peligro.png" alt=""></strong></div>`
     } else {
-        document.getElementById("resultado").innerHTML = `<div class='alert alert-danger' role='alert'><strong>Erorr, Los campos no estan debidamente diligenciados</strong></div>`
+        document.getElementById("pre").innerHTML = `<div class='alert alert-danger' role='alert'><strong>Erorr, Los campos no estan debidamente diligenciados</strong></div>`
     }
 }
 
@@ -64,9 +64,10 @@ function edades() {
     } else if (edad >= 60) {
         document.getElementById("resultado2").innerHTML = `<div class='alert alert-info' role='alert'><strong>Eres un anciano<img src="./img/abuelos.png" alt=""></strong></strong></div>`
     } else {
-        alert("Error")
+        document.getElementById("resultado2").innerHTML = `<div class='alert alert-danger' role='alert'><strong>Erorr, Los campos no estan debidamente diligenciados</strong></div>`
     }
-}
+    }
+
 
 
 function tablaH() {
